@@ -1,6 +1,7 @@
 package locations;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import stocks.*;
 import java.util.Random;
@@ -54,6 +55,11 @@ public class Cities {
     private Cities() {}
 
     static public ArrayList<City> getAllCities() {
-        return new ArrayList<City>(List.of(BRAHENVILLE, DAVILON, GRABENBERG, SAN_KOMARIKA));
+        ArrayList<City> cities = new ArrayList<>();
+        cities.add(BRAHENVILLE);
+        cities.add(DAVILON);
+        cities.add(GRABENBERG);
+        cities.add(SAN_KOMARIKA);
+        return cities;
     }
 }
